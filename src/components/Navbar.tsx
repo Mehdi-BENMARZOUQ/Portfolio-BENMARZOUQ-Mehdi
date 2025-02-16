@@ -38,10 +38,11 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
         <nav className="fixed top-3 left-0 right-0 z-50 flex flex-col md:flex-row md:justify-between mx-4">
             <div className="h-12 container mx-auto px-4 py-2 flex justify-between items-center border-[1.5px] border-[#ffffff1a] dark:border-[#ffffff1a] bg-transparent backdrop-blur-md mb-2 md:mb-0 shadow-lg" style={{maxWidth:"47rem",borderRadius:"50px"}}>
                 <ul className="mx-2 flex space-x-4">
-                    <li><button className="text-sm font-bold hover:text-gray-500">Home</button></li>
-                    <li><button className="text-sm font-bold hover:text-gray-500">Experience</button></li>
-                    <li><button className="text-sm font-bold hover:text-gray-500">Contact</button></li>
-                    <li><button className="text-sm font-bold hover:text-gray-500">Projects</button></li>
+                    <li><button className="text-sm font-bold hover:text-gray-500" onClick={() => document.getElementById('home-section')?.scrollIntoView({ behavior: 'smooth' })}>Home</button></li>
+                    <li><button className="text-sm font-bold hover:text-gray-500" onClick={() => document.getElementById('projects-section')?.scrollIntoView({ behavior: 'smooth' })}>Projects</button></li>
+                    <li><button className="text-sm font-bold hover:text-gray-500" onClick={() => document.getElementById('experience-section')?.scrollIntoView({ behavior: 'smooth' })}>Experience</button></li>
+                    <li><button className="text-sm font-bold hover:text-gray-500" onClick={() => document.getElementById('beyond-coding-section')?.scrollIntoView({ behavior: 'smooth' })}>Beyond Coding</button></li>
+                    {/*<li><button className="text-sm font-bold hover:text-gray-500">Contact</button></li>*/}
                 </ul>
                 <button
                     onClick={() => setDarkMode(!darkMode)}

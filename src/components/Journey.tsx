@@ -36,7 +36,7 @@ const journeyItems = [
 
 export default function Journey() {
     return (
-        <section className="py-20 bg-white dark:bg-gray-900">
+        <section id="experience-section" className="py-20 bg-white dark:bg-gray-900">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold mb-12 text-center">My Journey</h2>
                 <p className="text-xl mb-12 text-center">Education and Work Experience</p>

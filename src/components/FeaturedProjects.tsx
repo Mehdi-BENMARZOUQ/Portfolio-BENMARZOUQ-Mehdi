@@ -70,6 +70,7 @@ function ProjectCard({
 
   return (
       <motion.div
+          id="projects-section"
           ref={ref}
           initial={{ opacity: 0, y: 50 }} // Initial state (hidden)
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate when in view

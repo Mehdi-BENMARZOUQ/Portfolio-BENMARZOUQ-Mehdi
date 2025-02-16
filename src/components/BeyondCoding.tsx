@@ -12,8 +12,8 @@ const interests = {
         },
         {
             cover: "https://m.media-amazon.com/images/I/71vK0WVQ4rL._SY466_.jpg",
-            title: "Dale Carnegie",
-            author: "How to Win Friends and Influence People",
+            title: "How to Win Friends and Influence People",
+            author: "Dale Carnegie ",
         },
         {
             cover: "https://m.media-amazon.com/images/I/81fw6oo1OhL._SY425_.jpg",
@@ -26,7 +26,7 @@ const interests = {
             cover: "https://i.ytimg.com/vi/GSmCPlSVgGg/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDXd1TBOcVyIlPu6uHPw6Rl2h8Obw",
             title: "By My Side" ,
             artist: "Qaayel",
-            link:"https://www.youtube.com/watch?v=Y6-n3JRwmsE"
+            link:"https://www.youtube.com/watch?v=GSmCPlSVgGg&pp=ygURcWFheWVsIGJ5IG15IHNpZGU%3D"
         },
         {
             cover: "https://i.ytimg.com/vi/Y6-n3JRwmsE/hqdefault.jpg?sqp=-oaymwFBCOADEI4CSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLBHefAx5ElMYSpPlBc1r0dtxWVMng",
@@ -68,7 +68,7 @@ export default function BeyondCoding() {
     const isButtonsInView = useInView(buttonsRef, { once: false });
 
     return (
-        <section className="py-20 bg-gray-100 dark:bg-gray-800">
+        <section id="beyond-coding-section" className="py-20 bg-gray-100 dark:bg-gray-800">
             <div className="container mx-auto px-4">
                 {/* Title Animation */}
                 <motion.h2

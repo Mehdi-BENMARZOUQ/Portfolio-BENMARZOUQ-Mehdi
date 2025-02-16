@@ -12,7 +12,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800">
+    <section id="home-section" className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-800">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
