@@ -20,7 +20,7 @@ export default function App() {
       <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <motion.main initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <HeroSection />
+          <HeroSection darkMode={darkMode} setDarkMode={setDarkMode} />
           <CreativeWork />
           <FeaturedProjects />
           <Journey />

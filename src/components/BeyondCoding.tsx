@@ -1,7 +1,6 @@
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import React, { useState, useRef } from "react";
 import { Book, Music, Activity } from "lucide-react";
-import  Football   from "../../public/projects-img/ball-football-icon.png";
 
 const interests = {
     reading: [
@@ -13,7 +12,7 @@ const interests = {
         {
             cover: "https://m.media-amazon.com/images/I/71vK0WVQ4rL._SY466_.jpg",
             title: "How to Win Friends and Influence People",
-            author: "Dale Carnegie ",
+            author: "Dale Carnegie",
         },
         {
             cover: "https://m.media-amazon.com/images/I/81fw6oo1OhL._SY425_.jpg",
@@ -26,7 +25,7 @@ const interests = {
             cover: "https://i.ytimg.com/vi/GSmCPlSVgGg/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDXd1TBOcVyIlPu6uHPw6Rl2h8Obw",
             title: "By My Side" ,
             artist: "Qaayel",
-            link:"https://www.youtube.com/watch?v=GSmCPlSVgGg&pp=ygURcWFheWVsIGJ5IG15IHNpZGU%3D"
+            link:"https://www.youtube.com/watch?v=GSmCPlSVgGg"
         },
         {
             cover: "https://i.ytimg.com/vi/Y6-n3JRwmsE/hqdefault.jpg?sqp=-oaymwFBCOADEI4CSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLBHefAx5ElMYSpPlBc1r0dtxWVMng",

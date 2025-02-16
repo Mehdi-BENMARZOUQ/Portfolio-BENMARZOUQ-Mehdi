@@ -12,8 +12,9 @@ const skills = [
 
 export default function CreativeWork() {
     return (
-        <section className="py-20 bg-white dark:bg-gray-900">
-            <div className="container mx-auto px-4">
+        <section className=" py-20 bg-white dark:bg-gray-900">
+
+            <div className="container  mx-auto px-4">
                 <h2 className="text-5xl font-bold mb-12 text-center">Creative Work</h2>
                 <p className="text-xl mb-12 text-center text-gray-600 dark:text-gray-400">
                     Bringing ideas to life through innovative design and seamless interactions

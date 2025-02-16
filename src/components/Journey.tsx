@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import React from "react";
+import { motion } from "framer-motion"
+import React from "react"
 
 const journeyItems = [
     {
@@ -32,12 +32,14 @@ const journeyItems = [
         title: "Preparatory Cycle DEUST",
         description: "Faculty of Sciences and Technology, Marrakech - Mathematics, Computer Science, Physics, and Chemistry (MIPC)",
     },
-];
+]
 
 export default function Journey() {
     return (
-        <section id="experience-section" className="py-20 bg-white dark:bg-gray-900">
-            <div className="container mx-auto px-4">
+        <section id="experience-section" className="relative py-20 bg-white dark:bg-gray-900 overflow-hidden">
+
+
+            <div className="container mx-auto px-4 relative z-10">
                 <h2 className="text-3xl font-bold mb-12 text-center">My Journey</h2>
                 <p className="text-xl mb-12 text-center">Education and Work Experience</p>
                 <div className="max-w-4xl mx-auto">
@@ -50,7 +52,7 @@ export default function Journey() {
                 </div>
             </div>
         </section>
-    );
+    )
 }
 
 function TimelineLine({ items }: { items: any[] }) {
@@ -65,11 +67,11 @@ function TimelineLine({ items }: { items: any[] }) {
                 </div>
             ))}
         </div>
-    );
+    )
 }
 
 function JourneyItem({ year, title, description, type, isEven }: { year: string; title: string; description: string; type: string; isEven: boolean }) {
-    const Icon = type === "Study" ? GraduationCapIcon : BriefcaseIcon;
+    const Icon = type === "Study" ? GraduationCapIcon : BriefcaseIcon
 
     return (
         <motion.div
@@ -103,7 +105,7 @@ function JourneyItem({ year, title, description, type, isEven }: { year: string;
                 </>
             )}
         </motion.div>
-    );
+    )
 }
 
 function Card({ title, year, description }: { title: string; year: string; description: string }) {
@@ -122,7 +124,7 @@ function Card({ title, year, description }: { title: string; year: string; descr
                 <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 mb-3">{description}</p>
             </div>
         </div>
-    );
+    )
 }
 
 function GraduationCapIcon() {
@@ -134,7 +136,7 @@ function GraduationCapIcon() {
                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
             </svg>
         </div>
-    );
+    )
 }
 
 function BriefcaseIcon() {
@@ -145,5 +147,5 @@ function BriefcaseIcon() {
                 <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
             </svg>
         </div>
-    );
+    )
 }
