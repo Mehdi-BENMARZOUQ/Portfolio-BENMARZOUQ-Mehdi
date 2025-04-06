@@ -15,7 +15,7 @@ import Java from "../assets/icons/programmingLanguage/java.svg";
 import CSharpLogo from "../assets/icons/programmingLanguage/csharp.svg";
 import UMLLogo from "../assets/icons/programmingLanguage/uml.svg";
 import FigmaLogo from "../assets/icons/programmingLanguage/figma.svg";
-import GithubLogo from "../assets/icons/programmingLanguage/Github.svg";
+import GithubLogo from "../assets/icons/programmingLanguage/github.svg";
 import GitLogo from "../assets/icons/programmingLanguage/git.svg";
 import HTMLLogo from "../assets/icons/programmingLanguage/htmx.svg";
 import Merise from "../assets/icons/programmingLanguage/mega.svg";
