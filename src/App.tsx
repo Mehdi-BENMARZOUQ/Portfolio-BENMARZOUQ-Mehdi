@@ -27,7 +27,8 @@ export default function App() {
           <BeyondCoding />
           <Footer />
         </motion.main>
-       {/* <Dockbar />*/}
+        <Dockbar />
+
       </div>
     </div>
   )

@@ -2,35 +2,36 @@ import { motion, useInView } from "framer-motion";
 import type React from "react";
 import Image, { StaticImageData } from "next/image";
 import { useRef } from "react";
-import Image1 from "@/public/projects-img/en_cours.jpg";
-import Image2 from "@/public/projects-img/event_management.png";
-import Image3 from "@/public/projects-img/incident_managment.png";
-import Image4 from "@/public/projects-img/Public_procurement.png";
+
+import chatApplication from "@/public/projects-img/projects-photos/chatApplication.png";
+import photoManagement from "@/public/projects-img/projects-photos/photoManagerProject.png";
+import FSTWebsite from "@/public/projects-img/fstg_website.png";
+import EventManagement from "@/public/projects-img/event_management.png";
 
 const projects = [
   {
+    title: "Real-time messaging application",
+    description: "A software platform enabling instant text, Image, or video communication between users.",
+    image: chatApplication,
+    technologies: ["Node.js/Express", "React.js", "MongoDB", "Tailwind CSS", "Daisy UI", "Zustand"],
+  },
+  {
+    title: "Photo organization system based on facial recognition using AI",
+    description: "A photo organization system using facial recognition automates image tagging and grouping based on identified individuals.",
+    image: photoManagement,
+    technologies: ["Node.js/Express", "React.js", "MinIO", "Python/OpenCV", "PostgreSQL"],
+  },
+  {
     title: "FST Marrakech Website",
     description: "Developed with Laravel and ReactJS, this application allows students to check their grades while empowering administrators to manage updates.",
-    image: Image1,
+    image: FSTWebsite,
     technologies: ["Laravel", "ReactJS"],
   },
   {
     title: "Event Management Website",
     description: "Built with Laravel and ReactJS, this application manages event registrations and ticket sales.",
-    image: Image2,
+    image: EventManagement,
     technologies: ["Laravel", "ReactJS"],
-  },
-  {
-    title: "Incident Management System",
-    description: "A robust incident management system developed with Spring Boot and Angular, enabling efficient tracking and resolution of incidents impacting the bank's operations.",
-    image: Image3,
-    technologies: ["SpringBoot", "Angular"],
-  },
-  {
-    title: "Public Procurement Tracking Application",
-    description: "A public procurement tracking application developed with Laravel, PHP, HTML, CSS, and Bootstrap, enabling transparent and efficient management of the procurement process.",
-    image: Image4,
-    technologies: ["Laravel", "Html", "CSS", "Bootstrap"],
   },
 ];
 
@@ -104,7 +105,7 @@ function ProjectCard({
               className="bg-white/10 backdrop-blur-md dark:bg-gray-900/60 rounded-xl p-6 transform transition-all duration-300 group-hover:translate-y-0 translate-y-2"
           >
             <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
-            <p className="text-gray-200 text-sm mb-4 line-clamp-2">{description}</p>
+            {/*<p className="text-gray-200 text-sm mb-4 line-clamp-2">{description}</p>*/}
             <div className="flex flex-wrap gap-2">
               {technologies.map((tech, index) => (
                   <span

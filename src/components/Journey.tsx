@@ -39,7 +39,7 @@ export default function Journey() {
         <section id="experience-section" className="relative py-20 bg-white dark:bg-gray-900 overflow-hidden">
 
 
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="container mx-auto px-4 relative z-9">
                 <h2 className="text-3xl font-bold mb-12 text-center">My Journey</h2>
                 <p className="text-xl mb-12 text-center">Education and Work Experience</p>
                 <div className="max-w-4xl mx-auto">
@@ -118,7 +118,7 @@ function Card({ title, year, description }: { title: string; year: string; descr
                     <div className="absolute inset-0 rounded-lg" style={{ background: "linear-gradient(132.648deg, transparent 0%, rgba(100, 150, 255, 0.1) 50%, transparent 100%)" }}></div>
                 </div>
             </div>
-            <div className="relative z-10">
+            <div className="relative ">
                 <h3 className="text-lg md:text-xl font-semibold dark:text-white mb-1">{title}</h3>
                 <p className="text-xs md:text-sm text-gray-500 dark:text-gray-400 mb-3">{year}</p>
                 <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 mb-3">{description}</p>
@@ -129,7 +129,7 @@ function Card({ title, year, description }: { title: string; year: string; descr
 
 function GraduationCapIcon() {
     return (
-        <div className="w-8 h-8 rounded-full bg-green-500 border-4 border-white dark:border-gray-900 z-10 flex items-center justify-center">
+        <div  style={{zIndex:"77"}} className="w-8 h-8 rounded-full bg-green-500 border-4 border-white dark:border-gray-900 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-graduation-cap h-4 w-4 text-white">
                 <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
                 <path d="M22 10v6"></path>
@@ -141,7 +141,7 @@ function GraduationCapIcon() {
 
 function BriefcaseIcon() {
     return (
-        <div className="w-8 h-8 rounded-full bg-blue-500 border-4 border-white dark:border-gray-900 z-10 flex items-center justify-center">
+        <div style={{zIndex:"77"}} className="w-8 h-8 rounded-full bg-blue-500 border-4 border-white dark:border-gray-900 flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-briefcase h-4 w-4 text-white">
                 <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
                 <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
